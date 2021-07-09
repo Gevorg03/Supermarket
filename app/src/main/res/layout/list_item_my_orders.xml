@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:orientation="vertical"
+    android:elevation="6dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_my_orders"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_count_my_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5sp"
+            app:layout_constraintStart_toEndOf="@+id/img_my_orders"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="15sp"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_price_my_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/img_my_orders"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_count_my_orders"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_price_my_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/img_my_orders"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price_my_orders"
+            android:textSize="15sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

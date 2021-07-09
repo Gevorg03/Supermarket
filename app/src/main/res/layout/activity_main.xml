@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityes.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/ed_name_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Անուն"
+        android:drawableStart="@drawable/ic_account"
+        android:drawablePadding="12dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ed_pass_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Գաղտնաբառ"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/ed_name_login"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_pass_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Տեսնել գաղտնաբառը"
+        app:layout_constraintTop_toBottomOf="@+id/ed_pass_login"/>
+
+    <Button
+        android:id="@+id/log_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_pass_login"
+        android:text="մուտք" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_pass_login"
+        android:text="գրանցվել" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="150sp"
+        app:layout_constraintTop_toBottomOf="@+id/log_btn"
+        android:layout_marginTop="25sp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="190sp"
+        app:layout_constraintTop_toBottomOf="@+id/log_btn"
+        android:layout_marginTop="10sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Supermarket</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="add_address">Add Address</string>
+    <string name="ok">Ok</string>
+    <string name="action_order">Order</string>
+    <string name="orders">My orders</string>
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <string name="facebook_app_id">2991643777588795</string>
+    <string name="fb_login_protocol_scheme">fb2991643777588795</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">My shopping cart</string>
+    <string name="title_orders">My orders</string>
+    <string name="title_account">Account</string>
+</resources>
